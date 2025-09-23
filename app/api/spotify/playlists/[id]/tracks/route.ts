@@ -1,4 +1,4 @@
-import { withSpotify } from '../../_utils';
+import { withSpotify } from '../../../_utils';
 
 export const GET = async (_req: Request, { params }: { params: { id: string } }) =>
   withSpotify(async (token) => {
