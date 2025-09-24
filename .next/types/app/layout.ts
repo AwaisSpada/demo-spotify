@@ -1,4 +1,4 @@
-// File: C:\Users\Awais\Downloads\next-spotify-starter\app\layout.tsx
+// File: C:\Users\Awais\Downloads\next-spotify-starter-UI-updated\next-spotify-starter\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

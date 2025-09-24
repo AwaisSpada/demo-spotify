@@ -1,1 +1,0 @@
-{"version":1,"functions":{"/api/spotify/me":{},"/api/spotify/player/next":{},"/api/spotify/player/pause":{},"/api/spotify/player/transfer":{},"/api/spotify/playlists/[id]/tracks":{},"/api/spotify/player/previous":{},"/api/spotify/player/play":{},"/api/spotify/playlists":{}}}

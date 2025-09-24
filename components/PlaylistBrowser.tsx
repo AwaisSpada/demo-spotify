@@ -150,7 +150,17 @@ export default function PlaylistBrowser() {
   return (
     <div>
       <h2>Your Playlists</h2>
-      {loading && <p>Loading…</p>}
+      {loading && (
+            <div className="grid" style={{ marginTop: 12 }}>
+              {Array.from({length:8}).map((_,i)=>(
+                <div key={i} className="card">
+                  <div className="skeleton" style={{width:'100%', height:130, borderRadius:12}} />
+                  <div className="skeleton" style={{width:'60%', height:14, marginTop:10}} />
+                  <div className="skeleton" style={{width:'40%', height:12, marginTop:8}} />
+                </div>
+              ))}
+            </div>
+          )}
       {error && <p style={{ color: 'crimson' }}>{error}</p>}
       <div className="grid" style={{ marginTop: 12 }}>
         {playlists.map(pl => (
@@ -190,10 +200,10 @@ export default function PlaylistBrowser() {
           </div>
 
           <div className="row" style={{ gap: 12, marginTop: 16 }}>
-            <button onClick={previous}>Previous</button>
-            <button onClick={() => (isPlaying ? pause() : play())}>{isPlaying ? 'Pause' : 'Play'}</button>
-            <button onClick={next}>Next</button>
-            <button disabled={!playerReady} onClick={transferToDevice}>Transfer to Web Player</button>
+            <button className="btn" onClick={previous}>Previous</button>
+            <button className="btn btn-primary" onClick={() => (isPlaying ? pause() : play())}>{isPlaying ? 'Pause' : 'Play'}</button>
+            <button className="btn" onClick={next}>Next</button>
+            <button className="btn" disabled={!playerReady} onClick={transferToDevice}>Transfer to Web Player</button>
             <span className="muted">Device: {playerReady && deviceId ? deviceId : 'Not ready'}</span>
           </div>
         </div>

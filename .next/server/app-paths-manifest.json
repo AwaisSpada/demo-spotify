@@ -1,13 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/page": "app/page.js",
-  "/api/spotify/player/play/route": "app/api/spotify/player/play/route.js",
-  "/api/spotify/me/route": "app/api/spotify/me/route.js",
-  "/api/spotify/player/pause/route": "app/api/spotify/player/pause/route.js",
-  "/api/spotify/playlists/route": "app/api/spotify/playlists/route.js",
-  "/api/spotify/player/next/route": "app/api/spotify/player/next/route.js",
-  "/api/spotify/player/transfer/route": "app/api/spotify/player/transfer/route.js",
-  "/api/spotify/player/previous/route": "app/api/spotify/player/previous/route.js",
-  "/api/spotify/playlists/[id]/tracks/route": "app/api/spotify/playlists/[id]/tracks/route.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }
